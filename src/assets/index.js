@@ -2,6 +2,7 @@ import backend from "./backend.png";
 import close from "./close.svg";
 import creator from "./creator.png";
 import github from "./github.png";
+import live from "./live-tv.png";
 import logo from "./logo.png";
 import menu from "./menu.svg";
 import mobile from "./mobile.png";
@@ -51,6 +52,7 @@ export {
   flowmazon,
   git,
   github,
+  live,
   golang,
   html,
   javascript,

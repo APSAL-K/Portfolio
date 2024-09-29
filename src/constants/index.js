@@ -218,6 +218,7 @@ const projects = [
     ],
     image: zoomcar_mobile,
     source_code_link: "https://github.com/Selvan-S/zoomcar-clone-frontend",
+    live_link: "https://zoomcar-clone-selvan.netlify.app/",
   },
   {
     name: "Flowmazon",
@@ -255,6 +256,7 @@ const projects = [
     ],
     image: flowmazon,
     source_code_link: "https://github.com/Selvan-S/nextjs-ecommerce",
+    live_link: "https://nextjs-ecommerce-lac-six.vercel.app/",
   },
   {
     name: "Bookstore",
@@ -284,6 +286,7 @@ const projects = [
     ],
     image: bookstore,
     source_code_link: "https://github.com/Selvan-S/bookstore-frontend",
+    live_link: "https://booksstore-app.netlify.app/",
   },
 ];
 
