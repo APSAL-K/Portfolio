@@ -1,7 +1,7 @@
 import {
+  assign_mentor_students,
   backend,
   bookstore,
-  carrent,
   css,
   devbee,
   docker,
@@ -11,7 +11,6 @@ import {
   golang,
   html,
   javascript,
-  jobit,
   mongodb,
   nodejs,
   reactjs,
@@ -19,7 +18,7 @@ import {
   samturbo,
   tailwind,
   threejs,
-  tripguide,
+  todo_list_app,
   typescript,
   v3data,
   web,
@@ -257,6 +256,82 @@ const projects = [
     image: flowmazon,
     source_code_link: "https://github.com/Selvan-S/nextjs-ecommerce",
     live_link: "https://nextjs-ecommerce-lac-six.vercel.app/",
+  },
+  {
+    name: "Todo List App",
+    description:
+      "Todo List App is designed for task management, allowing you to generate checklists and divide tasks into smaller steps to help you stay organized in your daily routines.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "expressjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express-session",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Hook Form",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React Bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: todo_list_app,
+    source_code_link: "https://github.com/Selvan-S/todolistapp-frontend",
+    live_link: "https://2dolist-app.netlify.app/",
+  },
+  {
+    name: "Mentor and Student Assigning",
+    description:
+      "I developed a RESTful API using Node.js and Express to manage mentorship relationships between mentors and students. The API includes functionalities such as creating mentors and students, assigning students to mentors, and managing mentor assignments. It also handles dynamic mentor assignments, ensuring students without mentors are listed, and allows for easy retrieval of students assigned to a specific mentor.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "expressjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "daisyui",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: assign_mentor_students,
+    source_code_link: "https://github.com/Selvan-S/assign-mentor-frontend",
+    live_link: "https://assign-mentor-selvan.netlify.app/",
   },
   {
     name: "Bookstore",
