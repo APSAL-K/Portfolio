@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -14,7 +15,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div>
+        <div className="relative">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Selvan</span>
           </h1>
@@ -23,10 +24,38 @@ const Hero = () => {
             <br className="sm:block hidden" />
             and web functionalities.
           </p>
+          <a
+            href="https://drive.google.com/file/d/1hY_KnUcDweX44-uaLEEWVlyCfA_pnuUd/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              type="button"
+              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary mt-3 cursor-pointer absolute bottom-[-60px] z-20"
+            >
+              Download Resume
+            </button>
+          </a>
         </div>
       </div>
 
       <ComputersCanvas />
+      <div className="absolute left-5 top-1/2 transform -translate-y-1/2 flex flex-col gap-8">
+        <a
+          href="https://github.com/Selvan-S"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="w-10 h-10 text-white" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/selvan23/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className="w-10 h-10 text-white" />
+        </a>
+      </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

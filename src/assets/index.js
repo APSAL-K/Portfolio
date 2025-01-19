@@ -37,6 +37,8 @@ import typescript from "./tech/typescript.png";
 import tripguide from "./tripguide.png";
 import zoomcar_desktop from "./zoomcar_desktop.png";
 import zoomcar_mobile from "./zoomcar_mobile.png";
+import assign_mentor_students from "./assign-mentor-student.png";
+import todo_list_app from "./todo-list-app.png";
 
 export {
   backend,
@@ -77,4 +79,6 @@ export {
   web,
   zoomcar_desktop,
   zoomcar_mobile,
+  assign_mentor_students,
+  todo_list_app,
 };
