@@ -23,6 +23,11 @@ import {
   v3data,
   web,
   zoomcar_mobile,
+  csharp,
+  sql,
+  postGreSQL,
+  BAT,
+  NIHR,
 } from "../assets";
 
 export const navLinks = [
@@ -46,8 +51,8 @@ const services = [
     icon: web,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "React Developer",
+    icon: reactjs,
   },
 ];
 
@@ -69,8 +74,8 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "Go",
-    icon: golang,
+    name: ".NET",
+    icon: csharp,
   },
   {
     name: "React JS",
@@ -81,20 +86,8 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -104,50 +97,34 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "SQL",
+    icon: sql,
+  },
+  {
+    name: "postgreSQL",
+    icon: postGreSQL,
+  }
 ];
 
 const experiences = [
   {
-    title: "Assembly Engineer",
-    company_name: "EMF Innovations",
-    icon: emf,
-    iconBg: "#E6DEDD",
-    date: "Jan 2022 - Oct 2022",
-    points: [
-      "Inspected completed EV motor parts and components for quality control purposes.",
-      "Collaborated with other line workers and team members to assemble and repair parts.",
-      "Achieve the daily production target while ensuring the motor's functionality is thoroughly inspected.",
-    ],
-  },
-  {
-    title: "Marketing Executive",
-    company_name: "Sam Turbo Industry",
-    icon: samturbo,
-    iconBg: "#383E56",
-    date: "Dec 2022 - Jul 2023",
-    points: [
-      "Ensure ongoing communication between our marketing team and the client's marketing team regarding product design.",
-      "We aim to obtain the client's design approval within the designated timeframe of five days, in order to proceed to the manufacturing phase of the product.",
-    ],
-  },
-  {
-    title: "Lead Generation Executive",
-    company_name: "V3 Data Intelligence",
-    icon: v3data,
-    iconBg: "#E6DEDD",
-    date: "Feb 2024 - May 2024",
-    points: [
-      "Utilize email and LinkedIn platforms to effectively conduct marketing campaigns aimed at generating leads.",
-      "Email marketing campaigns that nurtured prospects through the sales funnel, resulting in greater conversions from leads to customers.",
-      "Utilized data-driven insights to refine targeting strategies, increasing qualified leads generated.",
-    ],
-  },
-  {
-    title: "Full-Stack Developer",
+    title: "Internship",
     company_name: "DevBee Inc",
     icon: devbee,
     iconBg: "#383E56",
-    date: "June 2024 - Present",
+    date: "Jan 2024 - March 2024",
+    points: [
+      "Completed a three-month internship focused on web development and React.js.",
+      "Completed the web development course in HTML, CSS, JavaScript, and React.",
+    ],
+  },
+  {
+    title: "Front-End Developer",
+    company_name: "DevBee Inc",
+    icon: devbee,
+    iconBg: "#383E56",
+    date: "Apr 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -186,46 +163,19 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Zoomcar Clone",
+    name: "College(final year) Project - Form Builder",
     description:
-      "Zoomcar Clone is a car rental application designed to provide users with a seamless vehicle rental experience. Users can search and filter vehicles based on categories and budget, view availability and price details, manage bookings, and process secure payments. The app ensures a user-friendly interface, secure access, and comprehensive booking management",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "expressjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "daisyui",
-        color: "pink-text-gradient",
-      },
-    ],
+      "Form creation and Data collection process. Web Based applications, created to Customized and Data’s Managing, Purpose of Survey, feedback collection and registration. The existing system of google forms. My proposed for dynamic form builder, Features of Dynamic form field options and customizable.",
+    tags: [],
     image: zoomcar_mobile,
-    source_code_link: "https://github.com/Selvan-S/zoomcar-clone-frontend",
-    live_link: "https://zoomcar-clone-selvan.netlify.app/",
   },
   {
-    name: "Flowmazon",
+    name: "BAT(British American Tobacco)",
     description:
-      "The E-commerce application was created to gain practical knowledge of Next.js' new app router, server actions, and the complexities of working with the Prisma database.",
+      'Global Tobacco Outlet Management Platform This project serves as the central hub for a leading tobacco outlet company, enabling seamless access to and management of data, reports, and business processes across 17 countries on a unified platform.  I contributed to this project for six months as part of Summit Solution, working on *BAT (British American Tobacco) projects. My role involved optimizing platform functionalities, enhancing data integration, and ensuring efficient workflow management to support BAT’s global operations.',
     tags: [
       {
-        name: "Nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
@@ -233,136 +183,56 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Next-Auth",
+        name: "Redux Toolkit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Ant Design",
+        color: "pink-text-gradient",
+      },
+      {
+        name: ".NET",
         color: "blue-text-gradient",
       },
       {
         name: "mongodb",
         color: "green-text-gradient",
-      },
-      {
-        name: "Prisma",
-        color: "white-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "daisyui",
-        color: "pink-text-gradient",
       },
     ],
-    image: flowmazon,
-    source_code_link: "https://github.com/Selvan-S/nextjs-ecommerce",
-    live_link: "https://nextjs-ecommerce-lac-six.vercel.app/",
+    image: BAT,
+    live_link: "https://backendconsole.azurewebsites.net/console/",
   },
   {
-    name: "Todo List App",
+    name: "NIHR(Right4)",
     description:
-      "Todo List App is designed for task management, allowing you to generate checklists and divide tasks into smaller steps to help you stay organized in your daily routines.",
+    'NIHR Clinical Trial Recruitment & Assessment System The NIHR Clinical Trial Recruitment and Assessment System streamlines participant data collection and ensures compliance with eligibility criteria. It features 09 recruitment pages and 3 assessment pages, enforcing mandatory fields to prevent missing information.  I worked on this project from scratch, developing a secure and structured platform for managing user roles, sites, and recruitment data. The system enables seamless data entry, editing, and assessment, ensuring efficient clinical trial management while maintaining regulatory compliance.',
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "typescript",
         color: "green-text-gradient",
-      },
-      {
-        name: "expressjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express-session",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "React Hook Form",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "pink-text-gradient",
       },
       {
         name: "React Bootstrap",
         color: "pink-text-gradient",
       },
+      {
+        name: "postgres",
+        color: "blue-text-gradient",
+      },
+      {
+        name: '.NET',
+        color: "blue-text-gradient",
+      }
+      
     ],
-    image: todo_list_app,
-    source_code_link: "https://github.com/Selvan-S/todolistapp-frontend",
-    live_link: "https://2dolist-app.netlify.app/",
+    image: NIHR,
+    live_link: "http://194.238.23.147:6100/recruitment",
   },
-  {
-    name: "Mentor and Student Assigning",
-    description:
-      "I developed a RESTful API using Node.js and Express to manage mentorship relationships between mentors and students. The API includes functionalities such as creating mentors and students, assigning students to mentors, and managing mentor assignments. It also handles dynamic mentor assignments, ensuring students without mentors are listed, and allows for easy retrieval of students assigned to a specific mentor.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "expressjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "daisyui",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: assign_mentor_students,
-    source_code_link: "https://github.com/Selvan-S/assign-mentor-frontend",
-    live_link: "https://assign-mentor-selvan.netlify.app/",
-  },
-  {
-    name: "Bookstore",
-    description:
-      "The Bookstore web application is specifically created to handle book records. Users have the ability to add, edit, and delete their books. Furthermore, users can provide reviews for books added by other users.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "expressjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: bookstore,
-    source_code_link: "https://github.com/Selvan-S/bookstore-frontend",
-    live_link: "https://booksstore-app.netlify.app/",
-  },
+ 
 ];
 
 export { experiences, projects, services, technologies, testimonials };

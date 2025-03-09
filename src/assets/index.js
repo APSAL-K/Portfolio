@@ -7,7 +7,7 @@ import logo from "./logo.png";
 import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
-
+import net from "./net.png";
 import bookstore from "./bookstore.jpg";
 import carrent from "./carrent.png";
 import devbee from "./company/devbee.jpg";
@@ -39,6 +39,13 @@ import zoomcar_desktop from "./zoomcar_desktop.png";
 import zoomcar_mobile from "./zoomcar_mobile.png";
 import assign_mentor_students from "./assign-mentor-student.png";
 import todo_list_app from "./todo-list-app.png";
+import csharp from "./c-sharp.svg";
+import sql from "./database-sql.svg";
+import postGreSQL from "./postgreSQL.svg";
+import BAT from "./BAT.png";
+import NIHR from "./NIHR.png";
+
+
 
 export {
   backend,
@@ -81,4 +88,10 @@ export {
   zoomcar_mobile,
   assign_mentor_students,
   todo_list_app,
+  net,
+  csharp,
+  sql,
+  postGreSQL,
+  BAT,
+  NIHR,
 };

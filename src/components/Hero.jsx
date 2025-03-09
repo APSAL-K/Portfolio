@@ -17,10 +17,10 @@ const Hero = () => {
 
         <div className="relative">
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Selvan</span>
+            Hi, I'm <span className="text-[#915EFF]">Apsal</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop full-stack applications, including user interfaces
+            I am a React front-end developer. including user interfaces
             <br className="sm:block hidden" />
             and web functionalities.
           </p>
@@ -42,14 +42,14 @@ const Hero = () => {
       <ComputersCanvas />
       <div className="absolute left-5 top-1/2 transform -translate-y-1/2 flex flex-col gap-8">
         <a
-          href="https://github.com/Selvan-S"
+          href="https://github.com/k-Afsal"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub className="w-10 h-10 text-white" />
         </a>
         <a
-          href="https://www.linkedin.com/in/selvan23/"
+          href="https://www.linkedin.com/in/k-apsal-330841302/"
           target="_blank"
           rel="noopener noreferrer"
         >

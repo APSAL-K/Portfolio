@@ -1,12 +1,12 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
- 
+import { AiOutlineCheckCircle } from "react-icons/ai"; // Import tick icon
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,6 +16,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false); // State to control modal visibility
 
   const handleChange = (e) => {
     const { target } = e;
@@ -31,23 +32,37 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    const publicKey = "UkLAP69O0YAYD_uEK";
+    const serviceID = "service_tez2qgi";
+    const templateID = "template_lpzervh";
+    if (!publicKey) {
+      setLoading(false);
+      alert("Public key is missing. Please check your configuration.");
+      return;
+    }
+    if (!serviceID) {
+      setLoading(false);
+      alert("Service ID is missing. Please check your configuration.");
+      return;
+    }
+
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        serviceID,
+        templateID,
         {
           from_name: form.name,
-          to_name: "Selvan FSD",
+          to_name: "Apsal FSD",
           from_email: form.email,
-          to_email: "selvan0023@gmail.com",
+          to_email: "apsal.k2004@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        publicKey
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          setShowModal(true); // Show modal on success
 
           setForm({
             name: "",
@@ -129,6 +144,21 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      {showModal && (
+        <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50'>
+          <div className='bg-white p-8 rounded-lg shadow-lg text-center'>
+            <AiOutlineCheckCircle className='text-green-500 text-6xl mb-4 mx-auto' />
+            <p style={{color:'black'}}>Thank you. I will get back to you as soon as possible.</p>
+            <button
+              onClick={() => setShowModal(false)}
+              className='mt-4 bg-tertiary py-2 px-4 rounded-lg text-white'
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
