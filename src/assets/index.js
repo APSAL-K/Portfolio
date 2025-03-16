@@ -44,6 +44,9 @@ import sql from "./database-sql.svg";
 import postGreSQL from "./postgreSQL.svg";
 import BAT from "./BAT.png";
 import NIHR from "./NIHR.png";
+import Gilbert from "./Gilbert.png";
+import Laravel from "./laravel.svg";
+import FormBuilder from "./formBuilder.jpg";
 
 
 
@@ -94,4 +97,7 @@ export {
   postGreSQL,
   BAT,
   NIHR,
+  Gilbert,
+  Laravel,
+  FormBuilder
 };

@@ -1,3 +1,4 @@
+import { l } from "maath/dist/misc-7d870b3c.esm";
 import {
   assign_mentor_students,
   backend,
@@ -28,6 +29,9 @@ import {
   postGreSQL,
   BAT,
   NIHR,
+  Gilbert,
+  Laravel,
+  FormBuilder
 } from "../assets";
 
 export const navLinks = [
@@ -104,6 +108,10 @@ const technologies = [
   {
     name: "postgreSQL",
     icon: postGreSQL,
+  },
+  {
+    name: 'Laravel',
+    icon: Laravel
   }
 ];
 
@@ -167,7 +175,8 @@ const projects = [
     description:
       "Form creation and Data collection process. Web Based applications, created to Customized and Data’s Managing, Purpose of Survey, feedback collection and registration. The existing system of google forms. My proposed for dynamic form builder, Features of Dynamic form field options and customizable.",
     tags: [],
-    image: zoomcar_mobile,
+    image: FormBuilder,
+    live_link: "https://form.io/",
   },
   {
     name: "BAT(British American Tobacco)",
@@ -230,7 +239,28 @@ const projects = [
       
     ],
     image: NIHR,
-    live_link: "http://194.238.23.147:6100/recruitment",
+    live_link: "http://194.238.23.147:6100",
+  },
+  {
+    name: "Gilbert",
+    description:
+    "Gilbert Project is a Laravel-based logistics and order management system with role-based access for Admins, Partners, Clients, and Delivery Men. It includes real-time order tracking, bidding, subscriptions, and secure payments via Stripe. Tech Stack: Laravel, MySQL ,Key Features: Order Management, Bidding System, Subscription Plans, Multi-Role Authentication",
+    tags: [
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Laravel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "blue-text-gradient",
+      },      
+    ],
+    image: Gilbert,
+    live_link: "http://147.79.66.44/logistics/frontend-section",
   },
  
 ];
