@@ -25,7 +25,7 @@ const Hero = () => {
             and web functionalities.
           </p>
           <a
-            href="https://drive.google.com/file/d/1JiyZ742YEeHOzteNxNC5sET_Yi8T5ytb/view?usp=sharing"
+            href="https://drive.google.com/file/d/18fcDteZLqua-bJtfMq4RNs-vLaFRZpQz/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -42,14 +42,14 @@ const Hero = () => {
       <ComputersCanvas />
       <div className="absolute left-5 top-1/2 transform -translate-y-1/2 flex flex-col gap-8">
         <a
-          href="https://github.com/k-Afsal"
+          href="https://github.com/APSAL-K"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub className="w-10 h-10 text-white" />
         </a>
         <a
-          href="https://www.linkedin.com/in/k-apsal-330841302/"
+          href="https://www.linkedin.com/in/apsal-k-330841302/"
           target="_blank"
           rel="noopener noreferrer"
         >
