@@ -6,6 +6,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { AiOutlineCheckCircle } from "react-icons/ai"; // Import tick icon
+import { HiMail, HiPhone } from "react-icons/hi";
 
 const Contact = () => {
   const formRef = useRef();
@@ -85,10 +86,28 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] glass p-8 rounded-2xl border border-white/10'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        {/* direct contact details */}
+        <div className="mt-6 flex flex-col gap-3">
+          <a
+            href="mailto:apsal.k2004@gmail.com"
+            className="flex items-center gap-3 text-secondary hover:text-white transition-colors w-fit"
+          >
+            <HiMail className="w-5 h-5 text-accent" />
+            <span>apsal.k2004@gmail.com</span>
+          </a>
+          <a
+            href="tel:+917550336250"
+            className="flex items-center gap-3 text-secondary hover:text-white transition-colors w-fit"
+          >
+            <HiPhone className="w-5 h-5 text-neon" />
+            <span>+91 75503 36250</span>
+          </a>
+        </div>
 
         <form
           ref={formRef}
@@ -131,9 +150,12 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='relative group py-3 px-8 rounded-xl outline-none w-fit text-white font-display font-bold border border-accent/50 glass-red overflow-hidden cursor-grow'
           >
-            {loading ? "Sending..." : "Send"}
+            <span className="relative z-10">
+              {loading ? "Sending..." : "Send Message"}
+            </span>
+            <span className="absolute inset-0 bg-gradient-to-r from-accent to-neon opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </button>
         </form>
       </motion.div>

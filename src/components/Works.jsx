@@ -18,21 +18,26 @@ const ProjectCard = ({
   live_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.4, 0.75)}>
       <Tilt
         options={{
-          max: 45,
-          scale: 1,
+          max: 18,
+          scale: 1.04,
           speed: 450,
+          glare: true,
+          "max-glare": 0.25,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="group glass p-5 rounded-2xl sm:w-[360px] w-full border border-white/10 hover:border-accent/50 hover:shadow-glow-red transition-all duration-300"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[230px] overflow-hidden rounded-2xl">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110"
           />
+          {/* neon scan sweep on hover */}
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-tr from-accent/20 to-neon/20" />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
             {/* <div
@@ -47,11 +52,11 @@ const ProjectCard = ({
             </div> */}
             <div
               onClick={() => window.open(live_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer glass-red border border-accent/40 hover:scale-110 transition-transform"
             >
               <img
                 src={live}
-                alt="source code"
+                alt="live link"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
@@ -59,15 +64,19 @@ const ProjectCard = ({
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <h3 className="text-white font-display font-bold text-[22px] group-hover:spider-gradient-text transition-all">
+            {name}
+          </h3>
+          <p className="mt-2 text-secondary text-[14px] leading-relaxed">
+            {description}
+          </p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
+              className={`text-[13px] font-medium px-2 py-1 rounded-md glass ${tag.color}`}
             >
               #{tag.name}
             </p>

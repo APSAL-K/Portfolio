@@ -44,6 +44,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "education",
+    title: "Education",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -51,12 +55,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
     title: "React Developer",
     icon: reactjs,
+  },
+  {
+    title: ".NET Core Developer",
+    icon: csharp,
+  },
+  {
+    title: "REST API Developer",
+    icon: backend,
   },
 ];
 
@@ -117,27 +129,27 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Internship",
+    title: "Web Development Intern",
     company_name: "DevBee Inc",
     icon: devbee,
     iconBg: "#383E56",
-    date: "Jan 2024 - March 2024",
+    date: "Jan 2024 - Mar 2024",
     points: [
-      "Completed a three-month internship focused on web development and React.js.",
-      "Completed the web development course in HTML, CSS, JavaScript, and React.",
+      "Completed a 3-month intensive program in HTML, CSS, JavaScript, and React — building component-based UIs and REST API integrations.",
+      "Promoted to full-time Junior Developer upon completion of the program.",
     ],
   },
   {
-    title: "Front-End Developer",
+    title: "Junior Software Developer",
     company_name: "DevBee Inc",
     icon: devbee,
     iconBg: "#383E56",
     date: "Apr 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built React dashboards + ASP.NET APIs for the BAT global platform, integrating 5+ REST endpoints to manage business data across 17 countries — eliminating manual regional reporting workflows.",
+      "Architected JWT-based RBAC for the NIHR clinical trial system supporting 3 access tiers across 12 recruitment sites; built 9 recruitment and 3 assessment forms with full validation and PostgreSQL persistence.",
+      "Delivered full-stack features across React, ASP.NET Core, Laravel, and PHP codebases — maintaining cross-browser compatibility and production-level performance standards.",
+      "Participated in code reviews and collaborated with designers and PMs to consistently ship production-ready features on schedule.",
     ],
   },
 ];
@@ -242,9 +254,30 @@ const projects = [
     live_link: "http://194.238.23.147:6100",
   },
   {
-    name: "Gilbert",
+    name: "Aamer - Enterprise Portal Suite",
     description:
-    "Gilbert Project is a Laravel-based logistics and order management system with role-based access for Admins, Partners, Clients, and Delivery Men. It includes real-time order tracking, bidding, subscriptions, and secure payments via Stripe. Tech Stack: Laravel, MySQL ,Key Features: Order Management, Bidding System, Subscription Plans, Multi-Role Authentication",
+      "Aamer is a multi-portal enterprise system built with React and ASP.NET Core. It integrates core business APIs and a token-based queue system to reduce customer wait times and improve operational efficiency. I built the multi-portal architecture, role-based access flows, and the real-time queue engine that keeps each portal in sync.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET Core",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: flowmazon,
+    live_link: "#",
+  },
+  {
+    name: "Gilbert - Logistics Platform",
+    description:
+    "Gilbert is a Laravel-based logistics and order management system with role-based access for 4 user types (Admins, Partners, Clients, Delivery Men). It features a real-time bidding/tracking engine, subscription plans, and secure Stripe payment integration — all from a single Laravel codebase.",
     tags: [
       {
         name: "PHP",
@@ -257,12 +290,43 @@ const projects = [
       {
         name: "MySQL",
         color: "blue-text-gradient",
-      },      
+      },
+      {
+        name: "Stripe",
+        color: "pink-text-gradient",
+      },
     ],
     image: Gilbert,
     live_link: "http://147.79.66.44/logistics/frontend-section",
   },
- 
+
 ];
 
-export { experiences, projects, services, technologies, testimonials };
+const education = [
+  {
+    degree: "M.Sc. Computer Science",
+    institution: "Texcity Arts and Science College",
+    date: "2024 - 2026",
+    location: "Coimbatore, Tamil Nadu",
+  },
+];
+
+const certifications = [
+  "Microsoft Azure - Computer Vision App with Azure Cognitive Services",
+  "Debugging - Certificate of Completion",
+  "NCC 'B' Certificate Holder",
+  "Design Thinking - International Webinar",
+];
+
+const languages = ["Tamil", "English", "Malayalam"];
+
+export {
+  experiences,
+  projects,
+  services,
+  technologies,
+  testimonials,
+  education,
+  certifications,
+  languages,
+};

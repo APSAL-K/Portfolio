@@ -47,9 +47,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled web developer with experience in React projects and .NET. 
-        I'm also working on some projects to further enhance my skills. 
-        Let's work together to bring your ideas to life!
+        Full-stack developer with 2+ years of production experience building
+        enterprise web applications using React and ASP.NET Core. I've delivered
+        live systems for global clients across 17 countries (British American
+        Tobacco) and built a clinical trial platform (NIHR Right4) end-to-end
+        from scratch. Skilled in REST API development, role-based access control,
+        PostgreSQL/MongoDB, and responsive UI — a strong collaborator in Agile
+        teams with a track record of shipping on time. Let's work together to
+        bring your ideas to life!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

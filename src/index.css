@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,8 +10,87 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #08080d;
+}
+
+.font-display {
+  font-family: "Orbitron", "Poppins", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* hide the native cursor on desktop — replaced by the custom one */
+@media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* ---- glassmorphism ---- */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.glass-red {
+  background: rgba(255, 34, 71, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 34, 71, 0.25);
+}
+
+/* ---- text glow / gradients ---- */
+.neon-text {
+  text-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+}
+.red-glow-text {
+  text-shadow: 0 0 14px rgba(255, 34, 71, 0.65);
+}
+.spider-gradient-text {
+  background: linear-gradient(95deg, #ff2247 0%, #ff6a3d 40%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---- cinematic grid backdrop ---- */
+.grid-bg {
+  background-image: linear-gradient(rgba(0, 212, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 34, 71, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+
+/* ---- custom scrollbar ---- */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #08080d;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ff2247, #00d4ff);
+  border-radius: 10px;
+}
+
+/* selection */
+::selection {
+  background: rgba(255, 34, 71, 0.4);
+  color: #fff;
+}
+
+.cursor-click {
+  width: 22px !important;
+  height: 22px !important;
 }
 
 .hash-span {
@@ -34,19 +114,19 @@
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #ff2247;
+  background: linear-gradient(-90deg, #ff2247 0%, rgba(0, 212, 255, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
-    rgba(60, 51, 80, 0) 100%
+    #ff2247 0%,
+    rgba(0, 212, 255, 0) 100%
   );
 }
 
 .green-pink-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: "#00d4ff";
+  background: linear-gradient(90.13deg, #00d4ff 1.9%, #ff2247 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00d4ff 1.9%, #ff2247 97.5%);
 }
 
 .orange-text-gradient {

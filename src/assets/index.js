@@ -47,10 +47,12 @@ import NIHR from "./NIHR.png";
 import Gilbert from "./Gilbert.png";
 import Laravel from "./laravel.svg";
 import FormBuilder from "./formBuilder.jpg";
+import devWorkspace from "./dev-workspace.jpg";
 
 
 
 export {
+  devWorkspace,
   backend,
   bookstore,
   carrent,
